@@ -36,17 +36,20 @@ fungsi mengakhiri session atau session_destroy
 jika logout sukses maka alertbox berisi " redirecting to login page in 5 second "
 otomatis kembali ke login page setelah 5 second
 
--koneksi-
+-koneksi.php-
 untuk menghubungkan atau membuat koneksi antara PHP ke engine MySQL menggunakan mysql extension yang telah tersedia yaitu mysqli_connect () dengan 3 argumen nya.
 
--proses-
+-proses.php-
 untuk insert data.
 
--prosesedit-
+-prosesedit.php-
 untuk proses insert data dari data yang telah kita edit.
 
--style-
+-style.css-
 untuk menmbahkan tampilan web agar menarik.
 
--validasi-
+-validasi.php-
 Untuk memastikan agar tidak ada user lain yang masuk ke web tersebut dan terjaga datanya.
+
+-relawan.sql-
+Untuk menambahkan database yang akan di input.
