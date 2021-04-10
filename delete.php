@@ -6,7 +6,7 @@
 	
 	$query = mysqli_query($koneksi,"DELETE FROM covid WHERE id='$idArtikel'");
 	
-	header('location: index.php');
+	header("location: index.php");
 
  ?>
 

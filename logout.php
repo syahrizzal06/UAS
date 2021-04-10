@@ -57,13 +57,5 @@
  ?>
 <?php header( "refresh:5;url=login.php" );?>
 </body>
-<script>alert('redirecting to login page in 5 second');
-
-
-setTimeout(function()
-{ 
-     window.location = "login.php"; 
-}, 2000);
-</script>
-
+<script>alert('redirecting to login page in 5 second')</script>
 </html>

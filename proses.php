@@ -1,6 +1,5 @@
 
 <?php 	
-    ob_start();
 	include 'koneksi.php';
 	
 
@@ -12,12 +11,12 @@
 	$ahli = $_POST['ahli'];
 
 
-    $sql="INSERT into covid (nama,alamat,provinsi,email,hp,ahli)values('$nama','$alamat','$provinsi','$email','$hp','$ahli')";
-    $query = mysqli_query($koneksi,$sql)or die(mysqli_error());
-    if ($query){
-        header('Location: /index.php', true, 301);
-    }else{
+
+	$query = mysqli_query($koneksi, "INSERT INTO covid VALUES('','$nama', '$alamat', '$provinsi', '$email', '$hp', '$ahli')") or die (mysqli_error($koneksi,$query));
+
+	if ($query) {
+		header("location: index.php");
+			}else{
 		echo "<h2 align=center>Proses Penginputan gagal</h2>";
 	}
-	ob_end_flush();
  ?>

@@ -13,7 +13,7 @@ if(isset($_SESSION['login'])){
 		$sql=mysqli_query($koneksi,"SELECT * FROM akun Where user='$user' and password='$pass'");
 	
 		if(mysqli_affected_rows($koneksi)>0){
-		$_SESSION['login'] = $user ;
+		$_SESSION['login'] = true ;
 		header('location:index.php');
 		exit;
 		}
